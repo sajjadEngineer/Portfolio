@@ -1,0 +1,10 @@
+
+
+.tabs{
+    display: grid;
+    padding: 10px 20px;
+    place-content: center;
+    place-items:center;
+    
+    
+}

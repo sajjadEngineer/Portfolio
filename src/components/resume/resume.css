@@ -1,0 +1,693 @@
+
+
+.resume-wrapper{
+    height: 100vh;
+    margin: 2rem;
+}
+
+.hd-wrapper{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+    
+}
+
+.resume-header{
+    margin-top: 1rem;
+    display: flex;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 7px;
+    color: #004d7a;    
+}
+
+.resume-bio{
+padding-top: 26px;
+display: flex;
+font-size: 20px;
+letter-spacing: 4px;
+font-weight: 500;
+color: rgb(58, 54, 54);
+margin-bottom: clamp(1rem,80%,2rem);
+}
+
+.tabs_menu{
+    height: 80vh;
+    display: grid;
+    grid-template-columns: .2fr 1fr 3fr;
+    grid-template-rows: 1fr;
+    margin:clamp(1rem,80%,3rem);
+    grid-template-areas: 'ls menu content';
+
+}
+
+.side-line{
+    grid-area:ls;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #051937, #051937, #004d7a);
+}
+
+.tablist_menu{
+    grid-area: menu;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    letter-spacing: 1px;
+}
+.tab_content{
+    grid-area: content;
+    padding-top: 4rem;
+}
+.tab_heading:hover{
+    background-image: linear-gradient(to right top, #051937, #004d7a, #051937, #051937, #004d7a);
+    color: white;
+}
+
+.tab_heading{
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0rem;
+    padding:.8rem 0rem;
+    font-size: 22px;
+    border-radius:0 30px 30px 0; 
+    
+}
+.edu-wrapper{
+    display: flex;
+    justify-content:center;
+    text-align: center;
+}
+
+.uni{
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: start;
+    text-align: start;
+    
+}
+
+
+.uni h2{
+    color: #3b484f;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding-top: 3rem;
+    text-align: start;
+}
+.uni h3{
+    color: #1b5676;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding-top: 1rem;
+    font-size: 23px;
+    text-align: start;
+    text-transform: capitalize;
+    padding-left: 2rem;
+    
+}
+.uni  h5{
+    color: #3b484f;
+    font-weight:600;
+    letter-spacing: 2px;
+    padding-top: .5rem;
+    font-size: 16px;
+    text-align: start;
+    justify-content: start;
+    text-transform:uppercase;
+    padding-left: 2rem;
+    
+    
+}
+
+
+.uni p{
+    color: #3b484f;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 19px;
+    margin: 6px 0px;
+    padding-left: 2rem;
+}
+.year{
+    display: flex;
+    flex-direction: column;
+    margin-top: .8rem;
+    padding-top: 6px;
+    justify-content: start;
+    text-align: center;
+    align-items: start;
+}
+
+.year p{
+    font-size:19px;
+    background-color: #004d7a; 
+    color: white;
+    margin:3rem;
+    width: 116px;
+    height: 30px;
+    border-radius: 30px;
+    padding-top:2px;
+}
+
+#myProgress {
+    width: 80%;
+    background-color: rgb(37, 41, 77);
+    
+  }
+
+#pyhton{
+    width: 80%;
+    background-color: rgb(37, 41, 77);
+    
+  }
+  
+#django{
+    width: 75%;
+    background-color: rgb(37, 41, 77);
+    
+  }
+  
+#html{
+    width: 85%;
+    background-color: rgb(37, 41, 77);
+    
+  }
+  
+#css{
+    width: 85%;
+    background-color: rgb(37, 41, 77);
+    
+  }
+  
+  
+#mysql{
+    width: 75%;
+    background-color: rgb(37, 41, 77);
+    
+  }
+  
+  
+#mysql{
+    width: 75%;
+    background-color: rgb(37, 41, 77);
+    
+  }
+  
+  
+#node{
+    width: 75%;
+    background-color: rgb(37, 41, 77);
+    
+  }
+  
+  
+
+  .progress-left{
+      display: flex;
+      flex: 0.4;
+      border: 2px solid rgb(127, 26, 127);
+      height: 14px;
+      border-radius:  0px 8px 8px 0px;
+      
+    }
+      
+  .progress-right{
+    display: flex;
+    flex: 0.4;
+    box-shadow: 3px 3px rgb(168, 160, 160), -1em 0 0.4em rgb(170, 170, 7);
+    height: 14px; 
+  }
+  
+  .pb-wrapper{
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      
+      
+  }
+
+  .head-clm{
+      display: grid;
+      width: 35%;
+      padding-top: 1rem;
+      
+  }
+
+  .head-clm p{
+      
+      margin-bottom: 3px;
+      font-size: 18px;
+      letter-spacing: 1.5px;
+      font-weight: 500;
+      color: #47473f;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+
+  /* media Query for Responsive  */
+  @media only screen and (max-width: 1200px){
+    /*Tablets [601px -> 1200px]*/
+
+    .resume-wrapper{
+        height: 100vh;
+        margin: 1rem;
+    }
+    .tabs_menu{
+    height: 80vh;
+    display: grid;
+    grid-template-columns: .2fr 1fr 3fr;
+    grid-template-rows: 1fr;
+    margin:clamp(1rem,80%,3rem);
+    grid-template-areas: 'ls menu content';
+
+}
+}
+
+@media only screen and (max-width: 900px){
+	/*Big smartphones [426px -> 600px]*/
+    .resume-wrapper{
+        height: 115vh;
+        margin: 1rem;
+        margin: auto;
+    }
+
+    .tabs_menu{
+        height: 100vh;
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 'menu' 'content';
+        justify-content: center;
+        align-items: center;
+        
+    
+    }
+    .tab_content{
+    grid-area: content;
+    box-shadow: 3px 3px rgb(168, 160, 160), -1em 0 0.4em olive;
+    margin:0 auto;
+}
+
+    .resume-header{
+        
+        display: flex;
+        font-size: 29px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 7px;
+        color: #004d7a;  
+        justify-content: center;
+        align-items: center;  
+    }
+
+    .tab_heading{
+        display: flex;
+        justify-content: center;
+        margin: 1rem 0rem;
+        padding:.1rem 0rem;
+        font-size: 16px;
+        border-radius:6px; 
+        
+        
+    }
+    
+    
+    .resume-bio{
+    padding-top: 26px;
+    display: flex;
+    font-size: 24px;
+    letter-spacing: 4px;
+    font-weight: 500;
+    color: rgb(58, 54, 54);
+    
+    }
+
+    .uni h2{
+        display: flex;
+        color: #3b484f;
+        font-weight: 500;
+        letter-spacing: 2px;
+        text-align: center;
+        font-size: 26px;
+    }
+    .uni h3{
+        color: #1b5676;
+        font-weight: 500;
+        letter-spacing: 2px;
+        padding-top: 1rem;
+        font-size: 23px;
+        text-align: start;
+        text-transform: capitalize;
+        
+        
+    }
+    .uni  h5{
+        color: #3b484f;
+        font-weight:600;
+        letter-spacing: 2px;
+        padding-top: .5rem;
+        font-size: 20px;
+        text-align: start;
+        justify-content: start;
+        text-transform:uppercase;
+        
+        
+        
+    }
+    
+    
+    .uni p{
+        color: #3b484f;
+        font-weight: 300;
+        letter-spacing: 1px;
+        font-size: 18px;
+        margin: 6px 0px;
+        
+    }
+}
+
+
+
+@media only screen and (max-width: 800px){
+	/*Small smartphones [325px -> 425px]*/
+    .resume-wrapper{
+        height: 130vh;
+        
+    }
+
+    .head-clm{
+        display: grid;
+        width: 40%;
+        padding-top: 1rem;
+        
+    }
+  
+    .head-clm p{
+        
+        
+        font-size: 16px;
+        letter-spacing: 1.2px;
+        font-weight: 500;
+        color: #47473f;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .progress-left{
+        display: flex;
+        flex: 0.4;
+        border: 2px solid rgb(127, 26, 127);
+        height: 11px;
+        border-radius:  0px 8px 8px 0px;
+        margin-bottom: 10px;
+      }
+        
+    .progress-right{
+      display: flex;
+      flex: 0.4;
+      box-shadow: 3px 3px rgb(168, 160, 160), -1em 0 0.4em rgb(170, 170, 7);
+      height: 11px; 
+      margin-bottom: 10px;
+    }
+    
+
+    .tabs_menu{
+        height: 100vh;
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 'menu','content';
+        text-align: center;
+        align-items: center;
+        align-items: center;
+      
+    
+    }
+    .resume-header{
+        margin-top: 10rem;
+        display: flex;
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 7px;
+        color: #004d7a;  
+        text-align: center;  
+
+        
+    }
+    
+    .resume-bio{
+    padding-top: 26px;
+    display: flex;
+    font-size: 20px;
+    letter-spacing: 4px;
+    font-weight: 500;
+    color: rgb(58, 54, 54);
+    text-align: center;
+    align-items: center;
+    align-items: center;
+    }
+
+    .tab_content{
+        grid-area: content;
+        margin-top: 1rem;
+        justify-content: start;
+        
+    
+    }
+    
+
+    .edu-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content:start;
+        text-align: start;
+        
+    }
+    
+    .uni{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        text-align: center;
+        
+    }
+
+
+
+.uni h2{
+    display: flex;
+    color: #3b484f;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 20px;
+}
+.uni h3{
+    color: #1b5676;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding-top: 1rem;
+    font-size: 18px;
+    text-align: start;
+    text-transform: capitalize;
+    
+    
+}
+.uni  h5{
+    color: #3b484f;
+    font-weight:600;
+    letter-spacing: 2px;
+    padding-top: .5rem;
+    font-size: 12px;
+    text-align: start;
+    justify-content: start;
+    text-transform:uppercase;
+    
+    
+    
+}
+
+
+.uni p{
+    color: #3b484f;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 14px;
+    margin: 6px 0px;
+    
+}
+.year{
+  display: none;
+}
+
+
+
+}
+
+
+@media only screen and (max-width: 600px){
+	/*Small smartphones [325px -> 425px]*/
+    .resume-wrapper{
+        height: 130vh;
+        display: grid;
+        
+        
+    }
+
+
+
+    .head-clm{
+        display: grid;
+        width: 40%;
+        padding-top: 1rem;
+        
+    }
+  
+    .head-clm p{
+        
+        
+        font-size: 14px;
+        letter-spacing: 1.2px;
+        font-weight: 500;
+        color: #47473f;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .progress-left{
+        display: flex;
+        flex: 0.4;
+        border: 2px solid rgb(127, 26, 127);
+        height: 8px;
+        border-radius:  0px 8px 8px 0px;
+        margin-bottom: 10px;
+      }
+        
+    .progress-right{
+      display: flex;
+      flex: 0.4;
+     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      height: 8px; 
+      margin-bottom: 10px;
+    }
+    
+
+    .tablist_menu{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 1px;
+        padding: 5px 0px;
+    }
+    .tabs_menu{
+        height: 100vh;
+        display: grid;
+        margin: auto;
+    
+    }
+    .resume-header{
+        
+        display: flex;
+        flex-direction: column;
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 7px;
+        color: #004d7a;  
+        text-align: center;  
+    }
+    
+    .resume-bio{
+    
+    display: flex;
+    font-size: 20px;
+    letter-spacing: 4px;
+    font-weight: 500;
+    color: rgb(58, 54, 54);
+    text-align: center;
+    
+ 
+    }
+
+    .tab_content{
+        grid-area: content; 
+        margin-top: 1rem;
+        justify-content: start;
+    
+    }
+    
+
+    .edu-wrapper{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        justify-content: center;
+        align-items: center;
+        
+        
+        
+    }
+    
+    .uni{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        text-align: center;
+        
+    }
+
+
+
+.uni h2{
+    display: flex;
+    color: #3b484f;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 20px;
+}
+.uni h3{
+    color: #1b5676;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding-top: 1rem;
+    font-size: 18px;
+    text-align: start;
+    text-transform: capitalize;
+    
+    
+}
+.uni  h5{
+    color: #3b484f;
+    font-weight:600;
+    letter-spacing: 2px;
+    padding-top: .5rem;
+    font-size: 12px;
+    text-align: start;
+    justify-content: start;
+    text-transform:uppercase;
+    
+    
+    
+}
+
+
+.uni p{
+    color: #3b484f;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 14px;
+    margin: 6px 0px;
+    text-align: start;
+    
+}
+.year{
+  display: none;
+}
+
+
+
+}

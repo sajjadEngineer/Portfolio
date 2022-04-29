@@ -1,0 +1,74 @@
+
+
+.award{
+    height: 110vh;
+    margin-top:4rem;
+    
+}
+.award_grid{
+    display: grid;
+    place-items: center;
+}
+.award_heading{
+    font-size: 28px;
+    color:#d4a926;
+    letter-spacing: 2px;
+    font-weight: 500;
+    padding-bottom:0.3rem;
+}
+.Achievement{
+    
+    font-size: 18px;
+    color: rgb(90, 91, 101);
+    letter-spacing: 2px;
+    font-weight: 500;
+    padding-bottom:0.3rem;
+}
+.line{
+    height: 3px;
+    width: 200px;
+    background: linear-gradient(18deg, #13085d 60%, #3c38ad 60%);
+    margin-top:1rem;
+    position: relative;
+}
+
+.line p{
+    background: linear-gradient(18deg, #5d4808 60%, #938614 60%);
+    width: 50px;
+    height: 15px;
+    margin-left: 4.6rem;
+    margin-top: -.3rem;
+    border-radius: 30px;
+    position: absolute;
+    
+}
+
+.content{
+   display: flex;
+   justify-content: center;
+    height: 70vh;
+    background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+    margin-top: 0.3rem;
+    margin: 1rem;
+    border-radius: 40px 0px 40px 0px;
+    flex-wrap:wrap;
+}
+
+
+.free-space{
+    height: 10vh;
+    background: linear-gradient(18deg, #fdcd3b 60%, #ffed4b 60%);
+    margin:0rem 1rem;
+    border-radius: 0px 25px 0px 0px;
+}
+
+@media screen and (max-width: 800px) {
+    .footer{
+        height: 100vh;
+        margin-top: 3rem;
+    } 
+}
+
+@media screen and (max-width: 400px) {
+
+}
