@@ -18,15 +18,8 @@ const Header = () => {
 <div class="main-wrapper" id='home'>
         
         <div class="large-header">
-       
+            
             <ul>
-                 {/*<li><a href="#" onClick={()=>setActiveNav('#')} className={activeNav==='#'?'active':''}><AiOutlineHome/></a>Home</li>
-               <li><a href="#about" onClick={()=>setActiveNav('#about')} className={activeNav==='#about' ? 'active' : ''}><AiOutlineUser/></a>about</li>
-                
-                  <li><a href="#resume"></a>Resume</li>
-                <li><a href="#award"></a>Award</li>
-                <li><a href="#contact"></a>Contact</li> */}
-
 
 <a href="#" onClick={()=>setActiveNav('#')} className={activeNav==='#'?'active':''}>Home<AiOutlineHome/></a>
       <a href="#about" onClick={()=>setActiveNav('#about')} className={activeNav==='#about' ? 'active' : ''}>About<AiOutlineUser/></a>
@@ -39,7 +32,7 @@ const Header = () => {
             <div class="header-title">
                 
                 <div class="hc">
-  
+                {""}
                     <label>Hello, I'm <span>Sajjad</span> </label>
                     
                 
@@ -63,8 +56,10 @@ const Header = () => {
 
                     <p>Building Application with frontend and backend </p>
                     <div class="bt-ar">
+                    <a href='sajjad.pdf' download='sajjad sajjad.pdf'>
                     <button class="btn"> Get Resume</button>
-                    <button class="btn" > Hire Me</button>
+                    </a>
+                    <button class="btn" >  {" "}Hire Me {" "}</button>
                      </div>
                 </div>
                 </div>                

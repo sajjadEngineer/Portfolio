@@ -1,9 +1,58 @@
-
-
 .resume-wrapper{
-    height: 100vh;
-    margin: 2rem;
+    height:max-content;
 }
+.award_grid{
+    display: grid;
+    place-items: center;
+}
+.award_heading{
+    font-size: 28px;
+    color:#d4a926;
+    letter-spacing: 2px;
+    font-weight: 500;
+    padding-bottom:0.3rem;
+}
+.Achievement{
+    
+    font-size: 18px;
+    color: rgb(90, 91, 101);
+    letter-spacing: 2px;
+    font-weight: 500;
+    padding-bottom:0.3rem;
+}
+.line{
+    height: 3px;
+    width: 200px;
+    background: linear-gradient(18deg, #13085d 60%, #3c38ad 60%);
+    margin-top:1rem;
+    position: relative;
+}
+
+.line p{
+    background: linear-gradient(18deg, #5d4808 60%, #938614 60%);
+    width: 50px;
+    height: 15px;
+    margin-left: 4.6rem;
+    margin-top: -.4rem;
+    border-radius: 30px;
+    position: absolute;
+    
+}
+.free-space{
+    height: 8vh;
+    background: linear-gradient(18deg, #fdcd3b 60%, #ffed4b 60%);
+    border-radius: 0px 20px 0px 0px;
+    margin:0rem 1rem;
+}
+
+
+.content{
+    height:max-content;
+    background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+    border-radius: 20px 0px 20px 0px
+    
+}
+
 
 .hd-wrapper{
     display: grid;
@@ -13,39 +62,21 @@
     
 }
 
-.resume-header{
-    margin-top: 1rem;
-    display: flex;
-    font-size: 26px;
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 7px;
-    color: #004d7a;    
-}
 
-.resume-bio{
-padding-top: 26px;
-display: flex;
-font-size: 20px;
-letter-spacing: 4px;
-font-weight: 500;
-color: rgb(58, 54, 54);
-margin-bottom: clamp(1rem,80%,2rem);
-}
+
 
 .tabs_menu{
-    height: 80vh;
+    height: max-content;
     display: grid;
     grid-template-columns: .2fr 1fr 3fr;
     grid-template-rows: 1fr;
-    margin:clamp(1rem,80%,3rem);
     grid-template-areas: 'ls menu content';
 
 }
 
 .side-line{
     grid-area:ls;
-    background-image: linear-gradient(to right top, #051937, #004d7a, #051937, #051937, #004d7a);
+    background-color: #d4a926;
 }
 
 .tablist_menu{
@@ -53,16 +84,21 @@ margin-bottom: clamp(1rem,80%,2rem);
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #fff;
+    background-color: #ffed4b;
     letter-spacing: 1px;
 }
 .tab_content{
     grid-area: content;
-    padding-top: 4rem;
+    
 }
 .tab_heading:hover{
-    background-image: linear-gradient(to right top, #051937, #004d7a, #051937, #051937, #004d7a);
+    background-color: #cbaa47;
     color: white;
+}
+
+.tab_heading.active{
+    background-color: #d4a926;
+    color:brown;
 }
 
 .tab_heading{
@@ -76,16 +112,15 @@ margin-bottom: clamp(1rem,80%,2rem);
 }
 .edu-wrapper{
     display: flex;
-    justify-content:center;
-    text-align: center;
+    justify-content:start;
+    text-align: justify;
 }
 
 .uni{
     display: flex;
     flex-direction: column;  
-    justify-content: center;
-    align-items: start;
-    text-align: start;
+    text-align: justify;
+    margin-left: rem;
     
 }
 
@@ -95,7 +130,7 @@ margin-bottom: clamp(1rem,80%,2rem);
     font-weight: 500;
     letter-spacing: 2px;
     padding-top: 3rem;
-    text-align: start;
+    text-align: justify;
 }
 .uni h3{
     color: #1b5676;
@@ -103,7 +138,7 @@ margin-bottom: clamp(1rem,80%,2rem);
     letter-spacing: 2px;
     padding-top: 1rem;
     font-size: 23px;
-    text-align: start;
+    text-align: justify;
     text-transform: capitalize;
     padding-left: 2rem;
     
@@ -252,11 +287,11 @@ margin-bottom: clamp(1rem,80%,2rem);
     /*Tablets [601px -> 1200px]*/
 
     .resume-wrapper{
-        height: 100vh;
+        height:max-content;
         margin: 1rem;
     }
     .tabs_menu{
-    height: 80vh;
+    height:max-content;
     display: grid;
     grid-template-columns: .2fr 1fr 3fr;
     grid-template-rows: 1fr;
@@ -269,13 +304,13 @@ margin-bottom: clamp(1rem,80%,2rem);
 @media only screen and (max-width: 900px){
 	/*Big smartphones [426px -> 600px]*/
     .resume-wrapper{
-        height: 115vh;
+        height:max-content;
         margin: 1rem;
         margin: auto;
     }
 
     .tabs_menu{
-        height: 100vh;
+        height: max-content;
         display: grid;
         grid-template-columns:1fr;
         grid-template-rows: 1fr;
@@ -289,6 +324,7 @@ margin-bottom: clamp(1rem,80%,2rem);
     grid-area: content;
     box-shadow: 3px 3px rgb(168, 160, 160), -1em 0 0.4em olive;
     margin:0 auto;
+    
 }
 
     .resume-header{
@@ -365,6 +401,7 @@ margin-bottom: clamp(1rem,80%,2rem);
         letter-spacing: 1px;
         font-size: 18px;
         margin: 6px 0px;
+        text-align: justify;
         
     }
 }
@@ -531,7 +568,7 @@ margin-bottom: clamp(1rem,80%,2rem);
 @media only screen and (max-width: 600px){
 	/*Small smartphones [325px -> 425px]*/
     .resume-wrapper{
-        height: 130vh;
+        height: max-content;
         display: grid;
         
         
@@ -541,7 +578,7 @@ margin-bottom: clamp(1rem,80%,2rem);
 
     .head-clm{
         display: grid;
-        width: 40%;
+        width:max-content;
         padding-top: 1rem;
         
     }
@@ -584,7 +621,7 @@ margin-bottom: clamp(1rem,80%,2rem);
         padding: 5px 0px;
     }
     .tabs_menu{
-        height: 100vh;
+        height: max-content;
         display: grid;
         margin: auto;
     

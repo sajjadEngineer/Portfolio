@@ -7,14 +7,24 @@ const Resume = () => {
     <div>
       <div class="resume-wrapper"  id='resume'>
 
-    <div class="hd-wrapper">
+    {/* <div class="hd-wrapper">
         <div className="resume-header">
         <h2>Resume</h2>
         </div>
         <div className="resume-bio">
         <p>My formal Bio details</p>
         </div>
-    </div>
+    </div> */}
+
+<div className="award_grid">
+        <div className="award_heading"><h2>Resume</h2></div>
+        <div className="Achievement"><p> My formal Bio details</p></div>
+        <div className="line">
+            <p></p>
+        </div>
+        </div>
+
+<div className="content">
 
 
     <div className='tabs_menu'>
@@ -22,19 +32,19 @@ const Resume = () => {
 
     </div>
 <div className="tablist_menu">
-    <div className={`tab_heading `} onClick={()=>{setIndex(0)}}>
+    <div className={`tab_heading ${index===0?`active`:null}`} onClick={()=>{setIndex(0)}}>
         Education
     </div>
-    <div   className={`tab_heading `} onClick={()=>{setIndex(1)}}>
+    <div   className={`tab_heading ${index===1?`active`:null}`} onClick={()=>{setIndex(1)}}>
         Work History
     </div>
-    <div  className={`tab_heading `} onClick={()=>{setIndex(2)}}>
+    <div  className={`tab_heading ${index===2?`active`:null}`} onClick={()=>{setIndex(2)}}>
         Programming Skills
     </div>
-    <div  className={`tab_heading `} onClick={()=>{setIndex(3)}}>
+    <div  className={`tab_heading ${index===3?`active`:null}`} onClick={()=>{setIndex(3)}}>
         Projects
     </div>
-    <div  className={`tab_heading `} onClick={()=>{setIndex(4)}}>
+    <div  className={`tab_heading ${index===4?`active`:null}`} onClick={()=>{setIndex(4)}}>
         intrests
     </div>
 </div>
@@ -216,30 +226,34 @@ const Resume = () => {
 <div className="edu-wrapper" >
     
     <div className="uni">   
-      <h3>PERSONAL COMPETENCIES</h3>
-      <p>Curently working on MERN stack web and moblile application and also teach the online courses.</p>
+      <h3>Reading</h3>
+      <p>Reading is the greatest way to keep yourself updated and unlock potential power.</p>
     </div>
   </div>
 <div className="edu-wrapper" >
     
     <div className="uni">   
-      <h3>Full stack Developer Intern</h3>
-      <p>Curently working on MERN stack web and moblile application and also teach the online courses.</p>
+      <h3>Traveling</h3>
+      <p>traveling historical places and things latest invention is my deep intrest</p>
     </div>
   </div>
+  
 <div className="edu-wrapper" >
     
     <div className="uni">   
-      <h3>PERSONAL COMPETENCIES</h3>
-      <p>• Like to share Knowledge.<br></br>
-• Ability to work in a fast-paced environment.<br></br>
-• Excellent oral and written correspondence with an exceptional attention to detail.
-• Highly organized with a creative flair for project work..</p>
+      <h3>Physical Gaming</h3>
+      <p>Playing every physical game for fitness and refreshing.</p>
     </div>
   </div>
+
 </div>
 </div>
 
+
+</div>
+</div>
+
+<div className="free-space">
 
 </div>
     </div>

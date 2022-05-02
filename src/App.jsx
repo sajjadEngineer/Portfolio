@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css';
-import About from './components/about/About';
+import About_me from './components/About_me Responsive/About_me';
 import Award from './components/award/Award';
 import Footer from './components/Footer/Footer';
 import Header from './components/header/Header';
@@ -13,7 +13,8 @@ const App = () => {
     <div>
     <Header/>
     <Nav/>
-    <About/>
+    <About_me/>
+    
     <Resume/>
     <Award/>
     <Footer/>
